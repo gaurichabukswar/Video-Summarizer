@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F5EFE0;
+    color: #1A1008;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .neo-card {
+    @apply bg-white border-2 border-ink rounded-2xl shadow-card;
+  }
+
+  .neo-card-sm {
+    @apply bg-white border-2 border-ink rounded-xl shadow-card-sm;
+  }
+
+  .btn-coral {
+    @apply bg-coral text-white font-semibold rounded-xl px-6 py-3
+           border-2 border-coral-dark shadow-btn
+           hover:bg-coral-dark active:translate-x-[3px] active:translate-y-[3px] active:shadow-none
+           transition-all duration-100 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-ink font-medium rounded-xl px-4 py-2
+           border-2 border-ink/20 hover:border-ink/50
+           transition-all duration-100;
+  }
+
+  .pill-badge {
+    @apply inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full
+           border-2 border-ink/20 bg-cream-dark text-ink/70
+           text-xs font-semibold tracking-widest uppercase;
+  }
+
+  .demo-pill {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full
+           border-2 border-ink/20 bg-white text-sm font-medium text-ink/80
+           hover:border-ink/50 hover:bg-cream-dark
+           transition-all duration-150 cursor-pointer whitespace-nowrap;
+  }
+
+  .tab-btn {
+    @apply flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
+           transition-all duration-150;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #d0c8b8 transparent;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
