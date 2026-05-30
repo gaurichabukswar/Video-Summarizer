@@ -16,7 +16,15 @@
 
 ## 🎬 Demo
 
-<video src="assets/demo.mov" controls width="100%" style="border-radius:12px;max-width:900px;"></video>
+<div align="center">
+  <a href="https://youtu.be/XByTE61-wYI">
+    <img src="https://img.youtube.com/vi/XByTE61-wYI/maxresdefault.jpg"
+         alt="Watch the demo — Video Summarizer"
+         width="80%" style="border-radius:12px;" />
+  </a>
+  <br/>
+  <sub>▶ Click to watch the full demo on YouTube</sub>
+</div>
 
 > *Paste a YouTube link → watch the pipeline run in real time → get a structured summary with key points and timestamps.*
 
