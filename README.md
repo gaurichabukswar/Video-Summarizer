@@ -14,6 +14,14 @@
 
 ---
 
+## 🎬 Demo
+
+<video src="assets/demo.mov" controls width="100%" style="border-radius:12px;max-width:900px;"></video>
+
+> *Paste a YouTube link → watch the pipeline run in real time → get a structured summary with key points and timestamps.*
+
+---
+
 ## ✨ Features
 
 - **No captions needed** — always transcribes directly from audio
